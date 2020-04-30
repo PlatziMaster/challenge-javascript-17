@@ -1,0 +1,16 @@
+{
+  "name": "challenge-javascript-13",
+  "version": "1.0.0",
+  "description": "Hay muchas formas de controlar los argumentos de una función en JS, la idea del reto es que crear una función que reciba una función y la ejecute con los argumentos al revés.",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^25.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
