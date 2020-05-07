@@ -10,21 +10,17 @@ function hotPotato(elements, turns) {
 
   while(queue.size() > 1) {
     for (let index = 0; index < turns; index++) {
-      const element = queue.dequeue();
-      queue.enqueue(element);
+      queue.enqueue(queue.dequeue());
     }
-    const player = queue.dequeue();
-    removed.push(player);
+    removed.push(queue.dequeue());
   }
-
-
 
   return {
     winner: queue.dequeue(),
     removed
   }
-
 }
+
 const players = ['Nicolas', 'Zule', 'Santiago', 'Valentina', 'Cristian', 'asa'];
 const rta = hotPotato(players, 2);
 
