@@ -1,9 +1,19 @@
 class Deque {
 
-  constructor() {
+  constructor(iterable=undefined) {
     this.count = 0;
     this.topCount = 0;
     this.items = {};
+    
+    if (iterable) {
+      const iterator = iterable[Symbol.iterator]();
+      let element = iterator.next();
+      while(!element.done) {
+        this.addBack(element.value);
+        element = iterator.next();
+      }
+      
+    }
   }
 
   addFront(element) {
