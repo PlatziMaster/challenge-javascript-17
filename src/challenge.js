@@ -7,8 +7,6 @@ function palindromeChecker(text) {
   }
 
   let deque = new Deque();
-  deque.topCount = text.length;
-
   let lowerText = text.toLowerCase();
   let toRigthText;
   let toLeftText = {};
