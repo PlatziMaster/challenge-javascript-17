@@ -17,6 +17,4 @@ function palindromeChecker(text) {
   return result()
 }
 
-
-console.log(palindromeChecker('Was it a car or a cat I saw'))
 module.exports = { palindromeChecker };
